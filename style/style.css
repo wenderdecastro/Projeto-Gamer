@@ -1,0 +1,117 @@
+/* ------------------------------------------------------ */
+/* RESET ------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------ */
+/* IMPORT FONTES ---------------------------------------- */
+/* ------------------------------------------------------ */
+
+@font-face {
+    font-family: "Quicksand";
+    src: url(/assets/fonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "TitilliumWeb";
+    src: url(/assets/fonts/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/Inter-Regular.ttf);
+}
+
+/* ------------------------------------------------------ */
+/* FONT FORMAT ------------------------------------------ */
+/* ------------------------------------------------------ */
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------ */
+/* MOBILE FIRST ----------------------------------------- */
+/* ------------------------------------------------------ */
+
+.desktop-contact {
+    display: none;
+}
+
+/* ------------------------------------------------------ */
+/* CLASSES GENÉRICAS ------------------------------------ */
+/* ------------------------------------------------------ */
+
+.container-grid {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.align-row {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* ------------------------------------------------------ */
+/* HEADER ----------------------------------------------- */
+/* ------------------------------------------------------ */
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #1B1426;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.white-icon {
+    fill: white;
+}
+
+.header-top {
+    display: none;
+}
+
+.header-bottom {}
+
+.leftside-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(26, 19, 37, 90%), rgb(27, 20, 38, 40%));
+}
+
+.leftside-menu a {
+    border-bottom: #F9AA01 2px solid;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+}
+
+.rightside-menu {
+    display: none;
+}
+
+img {
+    border: #ff0000 1px solid;
+}
+
+#mobile-logo {
+    scale: 66%;
+}
