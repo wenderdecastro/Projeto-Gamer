@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Gamer</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -48,59 +49,81 @@
 
             <div class="header-flex container-grid">
 
-                <img class="white-icon" src="assets/icons/menu-hamburguer.svg"
-                    alt="Menu hamburguer que abre o menu de navegação do site.">
+                <img src="assets/icons/menu-hamburguer.svg" alt="Menu hamburguer que abre o menu de navegação do site."
+                    onclick="menuClick()">
 
                 <img id="mobile-logo" src="assets/images/global/logotipo.png" alt="Logotipo projeto gamer.">
 
-                <img class="white-icon" src="assets/icons/menu-three-dots.svg"
+                <img src="assets/icons/menu-three-dots.svg"
                     alt="Menu de três pontos que abre o menu de compartilhamento por redes sociais.">
             </div>
 
-            <div class="mobile-leftmenu-layout">
-                <nav class="header-nav leftside-menu">
+            <aside id="mobile-leftmenu">
 
+                <nav class="header-nav leftside-links">
                     <a href="">Início</a>
                     <a href="">Jogadores</a>
                     <a href="">Notícias</a>
                     <a href="">Equipes</a>
 
+                    <div class="align-contacts">
+                        <img src="assets/icons/contact-phone.svg" alt="Ícone simbolizando um telefone">
+                        <span>(11) 0900-1010</span>
+                    </div>
+                    <div class="align-contacts">
+                        <img src="assets/icons/contact-email.svg" alt="Ícone simbolizando o email">
+                        <span>contato@gamer.com.br</span>
+                    </div>
                 </nav>
 
-                <div class="contacts-mobile-layout">
-
-                    <div class="telefone align-row">
-                        <img src="assets/icons/contact-phone.svg" alt="Ícone simbolizando um telefone">
-                        <p>(11) 0900-1010</p>
-                    </div>
-
-                    <div class="email align-row">
-                        <img src="assets/icons/contact-email.svg" alt="Ícone simbolizando o email">
-                        <p>contato@gamer.com.br</p>
-                    </div>
-
+                <div class="social-media">
+                    <img src="assets/icons/social-media-facebook.svg" alt="Ícone para compartilhamento no Facebook">
+                    <img src="assets/icons/social-media-linkedin.svg" alt="Ícone para compartilhamento no Linkedin">
+                    <img src="assets/icons/social-media-instagram.svg" alt="Ícone para compartilhamento no Instagram">
                 </div>
 
-                <nav class="user-options rightside-menu">
+            </aside>
 
-                    <img src="assets/icons/icon-profile.svg" alt="Perfil do usuário">
-                    <img src="assets/icons/icon-shoppingbag.svg" alt="Sacola de compras">
-                    <img src="assets/icons/icon-search.svg" alt="Pesquisar">
+            <nav class="user-options mobile-rightmenu">
 
-                </nav>
-            </div>
+                <img src="assets/icons/icon-profile.svg" alt="Perfil do usuário">
+                <img src="assets/icons/icon-shoppingbag.svg" alt="Sacola de compras">
+                <img src="assets/icons/icon-search.svg" alt="Pesquisar">
+
+            </nav>
 
         </div>
 
     </header>
 
+
     <!-- BANNER-------------------------------------------------- -->
-    <!-- 
-    <section>
 
-    </section> -->
+    <section class="banner">
+        <h1>Liga Gamers</h1>
 
-    <!-- JOGOS POPULARES----------------------------------------  -->
+        <button>
+            <h2>Sobre</h2>
+        </button>
+    </section>
+
+    <!-- TRENDING GAMES----------------------------------------  -->
+
+    <section class="most-popular ">
+
+        <div class="container-grid">
+
+            <article class="game-card most-played">
+
+            </article>
+
+            <article class="game-card last-played">
+
+            </article>
+
+        </div>
+
+    </section>
 
 </body>
 
