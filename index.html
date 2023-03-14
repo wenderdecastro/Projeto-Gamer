@@ -50,12 +50,13 @@
             <div class="header-flex container-grid">
 
                 <img src="assets/icons/menu-hamburguer.svg" alt="Menu hamburguer que abre o menu de navegação do site."
-                    onclick="menuClick()">
+                    onclick="leftMenuClick()">
 
                 <img id="mobile-logo" src="assets/images/global/logotipo.png" alt="Logotipo projeto gamer.">
 
                 <img src="assets/icons/menu-three-dots.svg"
-                    alt="Menu de três pontos que abre o menu de compartilhamento por redes sociais.">
+                    alt="Menu de três pontos que abre o menu de compartilhamento por redes sociais."
+                    onclick="rightMenuClick()">
             </div>
 
             <aside id="mobile-leftmenu">
@@ -84,7 +85,7 @@
 
             </aside>
 
-            <nav class="user-options mobile-rightmenu">
+            <nav class="mobile-user-options" id="mobile-rightmenu">
 
                 <img src="assets/icons/icon-profile.svg" alt="Perfil do usuário">
                 <img src="assets/icons/icon-shoppingbag.svg" alt="Sacola de compras">
@@ -107,23 +108,104 @@
         </button>
     </section>
 
-    <!-- TRENDING GAMES----------------------------------------  -->
+    <!-- TRENDING GAMES ----------------------------------------  -->
 
     <section class="most-popular ">
 
-        <div class="container-grid">
+        <div class="container-grid layout-mostpopular">
 
-            <article class="game-card most-played">
-
+            <article class="game-card container-grid">
+                <img src="assets/images/global/card-game-fifa.png"
+                    alt="Imagem do jogo Fifa 23 introduzindo um jogador se preparando para chutar a bola">
+                <div class="card-box">
+                    <div class="card-box-retangle">
+                        <h5>Mais populares</h5>
+                    </div>
+                </div>
             </article>
 
-            <article class="game-card last-played">
-
+            <article class="game-card container-grid">
+                <img src="assets/images/global/card-game-csgo.png"
+                    alt="Imagem do jogo CSGO exibindo dois agentes especiais armados.">
+                <div class="card-box">
+                    <div class="card-box-retangle">
+                        <h5>Último jogo</h5>
+                    </div>
+                </div>
             </article>
 
         </div>
 
     </section>
+
+    <!-- SECTION INFO ------------------------------------------  -->
+
+    <section class="info ">
+        <div class="info container-grid">
+
+            <div class="info-title-div">
+                <h3>Entre para o time Progamer</h3>
+                <hr>
+            </div>
+
+            <div class="info-box info-box-kj">
+
+                <img src="assets/images/global/png-killjoy.png" alt="">
+
+                <article class="info-card info-card-kj">
+
+                    <img src="assets/icons/info-card-controller.svg" alt="Ícone de controle de vídeo-games">
+
+                    <h4>20 Jogos diferentes</h4>
+
+                    <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
+                        técnicas.</p>
+
+                </article>
+
+            </div>
+
+            <div class="info-box info-box-jinx">
+
+                <img src="assets/images/global/png-jinx.png" alt="">
+
+                <article class="info-card info-card-jinx">
+
+                    <img src="assets/icons/info-card-board.svg" alt="Ícone de controle de vídeo-games">
+
+                    <h4>20 Jogos diferentes</h4>
+
+                    <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
+                        técnicas.</p>
+
+                </article>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION NOTÍCIAS --------------------------------------  -->
+
+    <section class="news">
+        <div class="news-title-div">
+            <h3>Notícias</h3>
+            <hr>
+        </div>
+        <div class="layout-news container-grid">
+            <article class="news-article-box">
+                <img src="" alt="">
+                <h2></h2>
+                <p></p>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER ------------------------------------------------  -->
+
 
 </body>
 

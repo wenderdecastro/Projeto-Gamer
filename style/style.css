@@ -14,29 +14,30 @@
 
 @font-face {
     font-family: Quicksand;
-    src: url(/assets/fonts/Quicksand-Regular.ttf);
+    src: url(../assets/fonts/Quicksand-Light.ttf);
 }
 
 @font-face {
     font-family: TitilliumWeb_Bold;
-    src: url(/assets/fonts/TitilliumWeb-Bold.ttf);
+    src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
 }
 
 @font-face {
     font-family: TitilliumWeb_Black;
-    src: url(/assets/fonts/TitilliumWeb-Black.ttf);
+    src: url(../assets/fonts/TitilliumWeb-Black.ttf);
 }
 
 @font-face {
     font-family: Inter;
-    src: url(/assets/fonts/Inter-Regular.ttf);
+    src: url(../assets/fonts/Inter-Regular.ttf);
 }
 
 /* ------------------------------------------------------ */
 /* FONT FORMAT ------------------------------------------ */
 /* ------------------------------------------------------ */
 
-a, span {
+a,
+span {
     color: white;
     text-decoration: none;
     font-family: Inter;
@@ -48,7 +49,6 @@ h1 {
     text-decoration: none;
     font-family: TitilliumWeb_Black;
     font-size: 40px;
-    text-shadow: 0px 0px 25px rgb(255, 0, 0, 55%);
 }
 
 h2 {
@@ -57,6 +57,37 @@ h2 {
     font-family: TitilliumWeb_Bold;
     font-size: 24px;
 }
+
+h3 {
+    color: white;
+    text-decoration: none;
+    font-family: TitilliumWeb_Black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: white;
+    text-decoration: none;
+    font-family: TitilliumWeb_Black;
+    font-size: 16px;
+}
+
+h5 {
+    color: #1B1426;
+    text-decoration: none;
+    font-family: TitilliumWeb_Bold;
+    font-size: 14px;
+}
+
+p {
+    color: white;
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 12px;
+}
+
+
 
 
 /* ------------------------------------------------------ */
@@ -72,10 +103,6 @@ h2 {
 /* ------------------------------------------------------ */
 
 .desktop-contact {
-    display: none;
-}
-
-.mobile-rightmenu {
     display: none;
 }
 
@@ -106,6 +133,7 @@ header {
     width: 100%;
     height: 60px;
     background-color: #1B1426;
+    z-index: 1000;
 }
 
 .header-flex {
@@ -117,8 +145,6 @@ header {
 #mobile-logo {
     scale: 66%;
 }
-
-.header-bottom {}
 
 /* ------------------------------------------------------ */
 /* LEFTSIDE MENU ---------------------------------------- */
@@ -149,7 +175,8 @@ header {
 
 }
 
-.leftside-links a, .leftside-links div {
+.leftside-links a,
+.leftside-links div {
     border-bottom: #F9AA01 2px solid;
     width: 100%;
     text-align: center;
@@ -170,8 +197,41 @@ header {
     margin-bottom: 15px;
 }
 
-.abrirMenu {
+.openLeftMenu {
     left: 0vw !important;
+}
+
+/* ------------------------------------------------------ */
+/* RIGHTSIDE MENU --------------------------------------- */
+/* ------------------------------------------------------ */
+
+.mobile-user-options {
+
+    position: fixed;
+    top: 60px;
+    right: -70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 70px;
+    height: 180px;
+
+    background-image: linear-gradient(rgb(26, 19, 37, 90%), rgb(27, 20, 38, 40%));
+    backdrop-filter: blur(5px);
+
+    z-index: 100;
+    transition: right 0.55s cubic-bezier(0, .92, .25, 1);
+}
+
+.mobile-rightmenu img {
+    width: 25px;
+}
+
+.openRightMenu {
+    right: 0px !important;
 }
 
 /* ------------------------------------------------------ */
@@ -194,6 +254,7 @@ header {
 .banner h1 {
     position: absolute;
     top: 15px;
+    text-shadow: 0px 0px 25px rgb(255, 0, 0, 55%);
 }
 
 .banner button {
@@ -217,15 +278,163 @@ header {
 /* ------------------------------------------------------ */
 
 .most-popular {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
     background-color: #1B1426;
     height: 680px;
 }
 
+.layout-mostpopular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
 .game-card {
+    position: relative;
+    height: 203.19px;
     width: 100%;
-    background-color: blue;
-    height: 25px;
+
+
+}
+
+.game-card img {
+    width: 100%;
+}
+
+.card-box {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to right, rgba(239, 239, 239, 0.6), rgba(239, 239, 239, 0.1));
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+    backdrop-filter: blur(2px);
+    height: 55px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card-box-retangle {
+    background-color: #F9AA01;
+    height: 80%;
+    width: 125px;
+    transform: skew(-45deg);
+    position: relative;
+    left: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box-retangle h5 {
+    transform: skew(45deg);
+    text-align: center;
+}
+
+/* ------------------------------------------------------ */
+/* SECTION INFO --------- ------------------------------- */
+/* ------------------------------------------------------ */
+
+.info {
+    background-color: #F9AA01;
+    height: 1366px;
+}
+
+.info-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-title-div h3 {
+    color: black;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.info-title-div hr {
+    margin-top: 30px;
+    border: black 1px solid;
+    width: 50%;
+}
+
+
+.info-box {
+    margin-top: 100px;
+    position: relative;
+}
+
+.info-box img {
+    width: 80%;
+}
+
+.info-card-kj {
+    bottom: 75px;
+    right: 0;
+}
+
+.info-card {
+    position: absolute;
+
+    width: 55%;
+    height: 55%;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
+
+    border: 1px #ffffff4a solid;
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.info-card img {
+    width: 45%;
+}
+
+.info-card h4 {
+    text-transform: uppercase;
+}
+
+.info-card p {
+    text-align: justify;
+    width: 80%;
+    margin-bottom: 10px
+}
+
+
+.info-card-jinx {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+
+.info-box-jinx {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ------------------------------------------------------ */
+/* SECTION NOTÍCIAS ------------------------------------- */
+/* ------------------------------------------------------ */
+
+.news{
+    height: 4096px;
+    background-image: url(../assets/images/global/backgrund_notícias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news-article-box{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    border: 1px #ffffff33 solid;
+    border-radius: 8px;
 }
